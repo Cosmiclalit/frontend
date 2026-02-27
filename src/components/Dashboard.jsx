@@ -31,7 +31,7 @@ function Dashboard() {
 
   async function fetchLogs() {
     try {
-      const res = await axios.get('/api/logs');
+      const res = await axios.get('https://bot-testing-4e9t.onrender.com/api/logs');
       setLogs(res.data);
     } catch (err) {
       console.error(err);
