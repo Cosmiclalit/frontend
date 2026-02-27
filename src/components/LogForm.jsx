@@ -11,7 +11,7 @@ function LogForm({ onSaved }) {
   async function handleSubmit(e) {
     e.preventDefault();
     try {
-      await axios.post('/api/logs', form);
+      await axios.post('https://bot-testing-4e9t.onrender.com/api/logs', form);
       setForm({ date: '', sleep: '', wakeUpTime: '', workHours: '', phoneUsageMinutes: '', notes: '' });
       if (onSaved) onSaved();
     } catch (err) {
