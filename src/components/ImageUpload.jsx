@@ -11,7 +11,7 @@ function ImageUpload() {
 
   async function fetchImages() {
     try {
-      const res = await axios.get('/api/images');
+      const res = await axios.get('https://bot-testing-4e9t.onrender.com/api/images');
       setImages(res.data);
     } catch (err) {
       console.error(err);
