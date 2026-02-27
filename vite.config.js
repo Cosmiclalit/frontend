@@ -5,7 +5,11 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'https://bot-testing-4e9t.onrender.com/api'
+      '/api': {
+        target: 'https://bot-testing-4e9t.onrender.com',
+        changeOrigin: true,
+        secure: true
+      }
     }
   }
 });
