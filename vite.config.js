@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://bot-testing-4e9t.onrender.com',
+        target: 'https://bot-testing-4e9t.onrender.com/',
         changeOrigin: true,
         secure: true
       }
