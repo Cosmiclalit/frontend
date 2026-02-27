@@ -30,7 +30,7 @@ function VoiceBot() {
 
               const sendQuery = async (text) => {
               try {
-                const res = await axios.post('/api/bot/query', { text });
+                const res = await axios.post('https://bot-testing-4e9t.onrender.com/api/bot/query', { text });
                 console.log("Response received:", res.data.answer);
 
                 setReply(res.data.answer);
